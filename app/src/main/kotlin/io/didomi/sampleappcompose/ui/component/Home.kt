@@ -1,6 +1,7 @@
 package io.didomi.sampleappcompose.ui.component
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -10,6 +11,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import io.didomi.sampleappcompose.R
+import io.didomi.sampleappcompose.ui.theme.DidomiGrey50
 import io.didomi.sampleappcompose.ui.theme.SampleAppJetpackComposeTheme
 
 interface HomeCallback {
@@ -21,9 +23,13 @@ interface HomeCallback {
 
 @Composable
 fun Home(callback: HomeCallback? = null) {
-    Box(modifier = Modifier.fillMaxSize()) {
+    Box(modifier = Modifier
+        .fillMaxSize()
+        .background(DidomiGrey50)) {
         Column(
-            modifier = Modifier.align(Alignment.Center),
+            modifier = Modifier
+                .align(Alignment.Center)
+                .width(IntrinsicSize.Max),
             verticalArrangement = Arrangement.spacedBy(32.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
@@ -47,8 +53,9 @@ fun Home(callback: HomeCallback? = null) {
 
         Image(
             modifier = Modifier
-                .align(Alignment.BottomCenter)
-                .padding(bottom = 16.dp),
+                .padding(bottom = 24.dp)
+                .size(135.dp, 24.dp)
+                .align(Alignment.BottomCenter),
             contentDescription = stringResource(id = R.string.app_name),
             painter = painterResource(id = R.drawable.didomi_logo),
         )
