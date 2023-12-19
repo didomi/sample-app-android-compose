@@ -8,17 +8,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
 private val DarkColorPalette = darkColors(
-    primary = DidomiBlue6,
-    primaryVariant = DidomiBlue6,
-    secondary = DidomiBlue6,
+    primary = DidomiElectricBlue50,
+    primaryVariant = DidomiElectricBlue50,
+    secondary = DidomiElectricBlue50,
     onPrimary = Color.White,
     onSecondary = Color.White,
 )
 
 private val LightColorPalette = lightColors(
-    primary = DidomiBlue6,
-    primaryVariant = DidomiBlue6,
-    secondary = DidomiBlue6,
+    primary = DidomiElectricBlue50,
+    primaryVariant = DidomiElectricBlue50,
+    secondary = DidomiElectricBlue50,
     onPrimary = Color.Black,
     onSecondary = Color.Black,
 
