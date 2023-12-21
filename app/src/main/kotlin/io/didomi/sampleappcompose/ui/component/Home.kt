@@ -53,8 +53,7 @@ fun Home(callback: HomeCallback? = null) {
 
         Image(
             modifier = Modifier
-                .padding(bottom = 24.dp)
-                .size(135.dp, 24.dp)
+                .size(120.dp, 64.dp)
                 .align(Alignment.BottomCenter),
             contentDescription = stringResource(id = R.string.app_name),
             painter = painterResource(id = R.drawable.didomi_logo),
