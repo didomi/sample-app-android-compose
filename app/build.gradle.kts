@@ -67,7 +67,7 @@ dependencies {
 
     implementation("com.google.android.gms:play-services-ads:22.6.0")
 
-    implementation("io.didomi.sdk:android:1.89.0")
+    implementation("io.didomi.sdk:android:1.90.0")
 
     debugImplementation("androidx.compose.ui:ui-test-manifest:1.5.4")
     debugImplementation("androidx.compose.ui:ui-tooling:1.5.4")
