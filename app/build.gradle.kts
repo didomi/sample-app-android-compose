@@ -1,5 +1,3 @@
-@file:Suppress("UnstableApiUsage")
-
 plugins {
     id("com.android.application")
     kotlin("android")
@@ -51,18 +49,18 @@ android {
 }
 
 dependencies {
-    implementation("androidx.activity:activity-compose:1.11.0")
-    implementation("androidx.compose.material:material:1.9.2")
-    implementation("androidx.compose.ui:ui:1.9.2")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.9.2")
+    implementation("androidx.activity:activity-compose:1.12.1")
+    implementation("androidx.compose.material:material:1.10.0")
+    implementation("androidx.compose.ui:ui:1.10.0")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.10.0")
 
     implementation("androidx.core:core-ktx:1.17.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.4")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.10.0")
 
-    implementation("com.google.android.gms:play-services-ads:24.6.0")
+    implementation("com.google.android.gms:play-services-ads:24.8.0")
 
     implementation("io.didomi.sdk:android:2.34.0")
 
-    debugImplementation("androidx.compose.ui:ui-test-manifest:1.9.2")
-    debugImplementation("androidx.compose.ui:ui-tooling:1.9.2")
+    debugImplementation("androidx.compose.ui:ui-test-manifest:1.10.0")
+    debugImplementation("androidx.compose.ui:ui-tooling:1.10.0")
 }
