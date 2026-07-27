@@ -6,13 +6,13 @@ plugins {
 
 android {
     namespace = "io.didomi.sampleappcompose"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "io.didomi.sampleappcompose"
 
         minSdk = 23
-        targetSdk = 36
+        targetSdk = 37
 
         versionCode = 1
         versionName = "1.0"
@@ -49,18 +49,18 @@ android {
 }
 
 dependencies {
-    implementation("androidx.activity:activity-compose:1.12.1")
-    implementation("androidx.compose.material:material:1.10.0")
-    implementation("androidx.compose.ui:ui:1.10.0")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.10.0")
+    implementation("androidx.activity:activity-compose:1.13.0")
+    implementation("androidx.compose.material:material:1.11.4")
+    implementation("androidx.compose.ui:ui:1.11.4")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.11.4")
 
-    implementation("androidx.core:core-ktx:1.17.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.10.0")
+    implementation("androidx.core:core-ktx:1.19.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.11.0")
 
-    implementation("com.google.android.gms:play-services-ads:24.8.0")
+    implementation("com.google.android.gms:play-services-ads:25.4.0")
 
-    implementation("io.didomi.sdk:android:2.45.0")
+    implementation("io.didomi.sdk:android:2.46.0")
 
-    debugImplementation("androidx.compose.ui:ui-test-manifest:1.10.0")
-    debugImplementation("androidx.compose.ui:ui-tooling:1.10.0")
+    debugImplementation("androidx.compose.ui:ui-test-manifest:1.11.4")
+    debugImplementation("androidx.compose.ui:ui-tooling:1.11.4")
 }
